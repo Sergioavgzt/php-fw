@@ -1,0 +1,32 @@
+<div class="page-header">
+    <h1>Проект Pro на Phalcon!</h1>
+</div>
+
+<p>This page is located at <code>views/index/index.phtml</code></p>
+
+		<div class="inside">
+			<a href="instructions/instructions-import-export.pdf" class="instructions_import" target="_blank">Инструкция  <i class="far fa-file-pdf"></i></a>
+			<a href="https://svarog-web.com" class="copyrire_import" target="_blank">Функционал разработан IT-компанией СВАРОГ</a>
+		</div>	
+<?php
+// Версия PHP
+
+	$current_php_version = phpversion();
+	echo "<p>Версия PHP: ".$current_php_version.".</p>";
+	
+print_r(get_loaded_extensions());	 
+	
+echo "<h1>Привет!</h1>";
+
+echo PHP_EOL;
+
+echo PHP_EOL;
+
+echo $this->tag->linkTo(
+    "signup",
+    "Регистрируйся!"
+);	
+	
+?>
+<a href="http://pro.svarog-test.ru/products"><h1>Таблица Продукция</h1></a>
+<a href="http://pro.svarog-test.ru/wp_ai1ec_events"><h1>Таблица События</h1></a>
